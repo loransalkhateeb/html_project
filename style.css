@@ -8,6 +8,13 @@
     scroll-behavior: smooth; 
 }
 
+:root{
+    --tr:0.7s ease;
+    --bk-white:#fff;
+    --tr1:scale(1.1);
+    --tr2:scale(1.2);
+    --bkblue:#3a6cf4;
+}
 
 header {
     background-color: #f0f0f0;
@@ -20,6 +27,11 @@ header {
     padding: 10px 60px ;
 }
 
+@media only screen and (min-width : 200px) {
+    .nav {
+ float:left;
+ }
+}
 .logo{
     text-decoration: none;
     color: #3a6cf4;
@@ -58,7 +70,7 @@ section {
 }
 
 .main h2 {
-    color: #fff;
+    color: var(--bk-white);
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -72,7 +84,7 @@ section {
 }
 
 .main h3 {
-    color: #fff;
+    color: var(--bk-white);
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -81,8 +93,8 @@ section {
 }
 
 .main-btn {
-    color: #fff;
-    background-color: #3a6cf4;
+    color: var(--bk-white);
+    background-color: var(--bkblue);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -91,11 +103,11 @@ section {
     letter-spacing: 1px;
     border-radius: 15px;
     margin-bottom: 40px;
-    transition: 0.7s ease;
+    transition: var(--tr);
 }
 
 .main1-btn{
-    color: #fff;
+    color: var(--bk-white);
     background-color: transparent;
     text-decoration: none;
     font-size: 1.1em;
@@ -114,18 +126,19 @@ section {
 
 
 .main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
+    background-color: var(--bkblue);
+    transform: var(--tr1);
 }
 
 .main1-btn:hover {
-    background-color: red;
-    transform: scale(1.1);
+    background-color: lightblue;
+    transform: var(--tr1);
+    color: #000;
 }
 
 
 .social-icons a {
-    color: #fff;
+    color: var(--bk-white);
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -144,28 +157,30 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
-    background-color: #fff;
-    width: 24.25em;
+    background-color: var(--bk-white);
+    width: 20.25em;
+    height: 350px;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
-    transition: 0.7s ease;
-    height: 350px;
+    transition: var(--tr);
+    
 }
 .small_images{
     transition: transform 500ms ease;
 }
 .card:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 5px #3a6cf4, 20px 0px 16px red;
+    transform: var(--tr1);
+    box-shadow: 10px 10px 5px lightblue;
 }
 .sm1:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr1);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 .sm1{
     border-style: solid;
@@ -175,7 +190,7 @@ section {
 }
 .sm2:hover{
     transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 .sm2{
     border-style: solid;
@@ -184,8 +199,8 @@ section {
     border-radius: 10px;
 }
 .sm3:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 .sm3{
     border-style: solid;
@@ -203,8 +218,8 @@ section {
 }
 
 .sm4:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 .sm5{
@@ -214,8 +229,8 @@ section {
     border-radius: 10px;
 }
 .sm5:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 .sm6{
@@ -225,8 +240,8 @@ section {
     border-radius: 10px;
 }
 .sm6:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 
@@ -237,8 +252,8 @@ section {
     border-radius: 10px;
 }
 .sm7:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 .sm8{
@@ -248,8 +263,8 @@ section {
     border-radius: 10px;
 }
 .sm8:hover{
-    transform: scale(1.2);
-    box-shadow: 10px 10px 5px #3a6cf4;
+    transform: var(--tr2);
+    box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 
@@ -269,7 +284,13 @@ section {
     font-weight: 700;
     margin: 10px;
 }
-
+.info1{
+font-size: 22px;
+}
+.info1 h3{
+   text-align: center;
+   margin-bottom: 18px;
+}
 .projects {
    
    background-color: #000016;
@@ -281,19 +302,19 @@ section {
 }
 
 .project-card {
-    background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 11em;
-    width: 12em;
+    background-color: var(--bk-white);
+    border: 1px solid var(--bk-white);
+    width: 20.25em;
+    height: 350px;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    transition: 0.7s ease;
+    transition: var(--tr);
 }
 
 .project-card:hover {
-   transform: scale(1.1);
-   box-shadow: 10px 10px 5px #3a6cf4;
+   transform: var(--tr1);
+   box-shadow: 10px 10px 5px var(--bkblue);
 }
 
 .project-card:hover .project-image {
@@ -311,6 +332,13 @@ section {
 .project-category {
     font-size: 0.8em;
     color: #000;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.skills-info{
+    padding: 2em;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .project-title {
@@ -324,6 +352,7 @@ section {
 .more-details {
     text-decoration: none;
     color: #3a6cf4;
+    margin-left: 90px;
 }
 
 .more-details:hover {
@@ -397,6 +426,7 @@ section {
 
 }
 
+
 @media (max-width:641px){
     body{
         font-size: 12px;
@@ -437,7 +467,7 @@ body{
 }
 .about-left-content:hover{
     transition: 0.4s ease;
-    box-shadow:  10px 0px 16px 10px red;
+    box-shadow:  10px 0px 16px 10px lightblue;
 }
 
 header{
@@ -464,23 +494,23 @@ header{
 
 
 .about-left{
-    background-color: #601cfc;  
+     background-color: #601cfc;   
     /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    color:#fff;
-    
+    height: 98vh;
+    color:var(--bk-white);
+    margin-top: 50px;
 }
 .about-left-content > div{
     background: #12192c;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
     border-radius: 12px 12px 0 0;
-    padding-bottom: 30px;   
 }
+
 .about-left-content{
     box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
     -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
@@ -534,7 +564,7 @@ header{
 .icons li{
     list-style-type: none;
     background: #601cfc;
-    color: #fff;
+    color: var(--bk-white);
     width: 40px;
     height: 40px;
     margin: 0 0.5rem;
@@ -552,14 +582,14 @@ header{
 }
 .about-right{
     background: #12192c;
-    height: 100vh;
+    height: 106vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 5rem;
     text-align: center;
-    color:#fff
+    color:var(--bk-white)
 }
 .about-right h1{
     font-size: 5rem;
@@ -579,7 +609,7 @@ header{
     border: none;
     font-size: 0.9rem;
     text-transform: uppercase;
-    border: 2px solid #fff;
+    border: 2px solid var(--bk-white);
     border-radius: 20px;
     padding: 0.55rem 0;
     width: 130px;
@@ -587,11 +617,11 @@ header{
     background: transparent;
     margin: 0 0.5rem;
     cursor: pointer;
-    color:#fff
+    color:var(--bk-white)
 }
 .btn.btn-pink{
     background: #601cfc;
-    color: #fff;
+    color: var(--bk-white);
     border-color: #601cfc;
     transition: all 0.5s ease-in-out;
 }
@@ -748,7 +778,7 @@ header{
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     margin: 15px;
-    transition: 0.7s ease;
+    transition: var(--tr);
     height: 350px;
     margin-left: 60px;
     margin-right: 90px;
@@ -786,9 +816,9 @@ header{
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
-    transition: 0.7s ease;
+    transition: var(--tr);
 }
 .card_last:hover {
-    transform: scale(1.1);
-    box-shadow: 10px 10px 10px #3a6cf4, 10px 0px 16px 10px red;
+    transform: var(--tr1);
+    box-shadow: 10px 10px 10px lightblue;
 }
