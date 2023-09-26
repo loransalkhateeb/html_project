@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorans Alkhateeb</title>
+</head>
+<body>
+    
+    <!--This is the header section-->
+    <header>
+        <a href="#" class="logo">Lorans</a>
+        <nav class="navigation">
+            <a href="#services">Trainning And Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact_Us</a>
+        </nav>
+    </header>
+
+
+
+
+    <!--This is the Main section of the website-->
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Lorans Alkhateeb<br><span>Coding Creator</span></h2>
+            <h3>Iam amobile developer and web developer</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <a href="profile_page.html" class="main1-btn" target="_blank">who am I</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lorans-alkhateeb-2a7864278/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/lorans.alkhateeb" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/loransalkhateeb/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/loransalkhateeb" target="_blank"><i class="fab fa-github"></i></a>
+            </div>    
+        </div>
+    </section>
+
+
+
+    <!--This is the services cards-->
+    <section class="cards" id="services">
+        <h2 class="title">Trainning And Experience</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <img src="https://global-uploads.webflow.com/5f0082d019150187c1bdb9ca/62e335d20f6df4b0994809f4_tips%20mencari%20kerja%20untuk%20fresh%20graduate.jpg"
+                    width="160px" height="170px" style="border-radius: 17px;" alt="">
+                </div>
+                <div class="info">
+                    <h3>Bachloros degree(Computer Science)</h3>
+                    <!-- <p>
+                        I obtained a bachelor's degree in computer science from Al Al-Bayt University</p> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="https://pbs.twimg.com/profile_images/1652264858690150401/gKNTo87D_400x400.jpg"
+                    width="160px" height="170px" style="border-radius: 17px;" alt="">
+                </div>
+                <div class="info">
+                    <h3>Uni-match EFE jordan(Flutter)</h3>
+                    <!-- <p>Education for employment jordan will partner with deutshe Gesellschaft for international Zusammenabiet(GIZ) 2 months
+                    </p> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4C9fL9mTrUVuUiDSiULnRMuo0MIaK7z5XrNoSOCt7tEav6lmZfkiiHDg4oouEhEXkAsY&usqp=CAU"
+                    width="160px" height="170px" style="border-radius: 17px;" alt="">
+                </div>
+                <div class="info">
+                    <h3>Mobile app development(Flutter)</h3>
+                    <!-- <p>I received training at the Advanced Software Academy in developing
+                        I spent (6 months) of training
+                    </p> -->
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAxlBMVEX///9TkwAAAABNkABUlQBDiwBVlwDj7N5HjQBUlABWmQApSQA4YwBJjgCKs2eWundHfgDC1rFRjwB/f3+srKxOigDW4s0SIABYlRX6/PcnRQDK27s1XgDw9etAcQDf6dWuyZegwIW2zqLF2LVEeQBKgwAGCwDT4caBrVpknComQwA9bQATIgAyWAAdNAAaLgB4qEyyzJ0PGgAKEgCnxY9soTicvYBxpEIwgwAuUQAgOQCOtGx8qlJqgVhtc2iFsF8NFgAbLwD7Co5kAAAR9UlEQVR4nO2de1/iPBbHp6YpLVq57MLQQUQRrOjoyCPKOLjr87z/N7W9JU3SkzS9gXyW318zUGq+TXLOycml3741q3+dRPp3w39mjzoSHr6OhIevI+Hh60h4+DoSHr6OhIevI+Hh60h4+DoSHr6OhIevI+Hh60h4+Pq/IvQmU3/cm11FWs3G/nTi7bt4NSgh/M/50sUY27ZLZdvhB6O769lwsu9SVpD335jwzDQkQm6Ajj7W/gFiev710v6RR0g4bTzqjA+p1U5mzxi7hnWqRxhj2vh11dp3ybU0WS2xi8JCFyKM6hKP1l8d0uu9BpWXqChhKBcvZ1+4uU472EZpacsQRpDnw32TwBq/YsQVtSRh0FzxsrdvmqxmhsBXgTCQjVZfq7HOkJ0tZRXCoLG6V1+HsWcAfFUJQ8bVvsli+SMMl7AqYdBWjZt90wXu71nCVwehYeDX6Z4BrzP2pV7CwK529tkdfcNVFK4WwqA7ovHeALe0gZqxGiEMmurdfqpxatIKNC8jPfSbIQwiVn8PgGvGwrRjlJOB0wxhUI2dXfN5G9YFNk9ouMvdjpKHiDOhOyAMjOouDc5K8IG7IAxa6vXOALeik98NoWF/7Ahwk3GCOyIMOuMu3MZklI1idkVoIKP5LEfLAMK0nREGLbXxOPUOikN3SGjgZlMck2/n+yY0cJPxzcT7AoRNIoaG7AsQNocYWeqvQGjgZsyN93UIDbsRpxE7269BaBgNxOHJLb8IIVrWDvg55QgdTpTQZL9qtA7d55oBV79bHGGf0yAhnPfNtkm/M5okNOy3WgGHGLOE1v2Jjv6qThg1BvgrXGcu1UNGGcLv1QhNq230B4NB32pbYpYrQqzR2mxEwh+NEzqWNT+ljeH+omtZ4m3QqDbAtW3smNCxjIsX4W7vi7ZwI3dbE+A0HNLXReiEeVVZ1yKyjEfofk+LNv/DulI30V3rIHSCntWfz+fdgRH0LCmlaZ3J7ngq9Ee3ljF/x80SlrGlZrv/cH+bfPVyfxY0OhDSWnyX3/JlYbHXojoyN8M47cQROotutzu/nF8+PDycBXpI/v5Zl9XiniG0rMsnsYrPDCsL2JZWYKw595s6XAa5FefxHZMTiWmET1OP77Qv/4KKe5HxAu13NeDJySWHWL2drl2IUCxW8seF5kYJzb5Yf0S38zZ/p1P22/vLwB0uug/vXLuds08FnVcEnJDUaBXC9lxRJe8W0xu5GrwwAnMUyAwM1ID9ggvwq44VnwlQBcKLhxOVnlKDYzFXnhoseuAgU8afbDutOMrwaXa7AiHYAxn9IojOIP1wLri+oCunLeGRRcSV1t6M0vuUJ+Qq7KzbD5rd4vGW+fCfpMBt2ltvB4CVNdMHwLVTVAGwl05Q1EL42G+bUYWZgfP4mX5+Gpkbk1bSbR8M9FLEJ9Y+uevyhMxtaiDke5bVZjrdQ1hl7V+0iiSRbPoMuuwVuLTHmDGzoNUJMz3LNP6wzc5c0CuloTq1tf9wlVh62o29d1XCF6BenNQ5/GkbFvnPY1h6RyLyg0UdldhjJ7IrEr7APatNxxBzy0ps7m3fCCKdPnR5AE5iulPWFJXtiSP21hUJZT2LxjDf24yr0JHBtnm7FOCYm+mtRpj0rGDgHom9iJjUS1XgA+iBfWb2rAzhhmOpRBh7g8Cj//wV6olBpPblV86YQhTn9Y0yCY0WP1lfiXDhJITxf29ZQ0jb6c+TQuIJy0zWdHiUKoQ/EyJC+MISOgX7H0xYZigsrLeoQkjSGE4/+YAzO5ZiSK9NWCK12BOW/VYh7JPIGibMHfPqELpXRQk3AokWIe8SCOEf0ihhQpM3ou/zrpYGQoRU1NZMxEVBWoT8Y6XjQ/IxTOgYHOFF29SSmMUqOhKeiauCdAhv4Tpk8qVgXbe5jvidT2toq2hw+iqC6BD+BddhllD4NW9qFmUmAUIVAsw0Ui1C4fGXJPxRshKLNdNeZunaDgiJyxdtiKaKhd/ZlU86hD+rEZKw7alkJRZKSWX3UOyAcEEq8QxI0mioiNMfliOs2Eq7l6Qrdksh2gWSbuvsNoo6bCn1h3xHo4RtmndclEFEBaYTM76iHn8Ie/yU0Eqjm3mZvujoEwJbmZSEFlg3WcKFmtBsp6mpd2jmPkf6HXFalJDkh/rqFUNmN4eQVnLYIB4sq6DbsLWnhDMhmy4hH45kCMm0xC3fy1JCPgq/fVzAizBk0g/ctgCFVuTNT+1lCS/iD/4SZtRSQkOY4P779KGrT4g2uoQj4Ndqwr/jAj3mECbT/0/SOgz+c3EiqECIo5ty86A9k2pLk1gIPhrJEBKUUwWhwSb7ixLqmppWcUIyTOc/FQipHTmTWZr4Z92XsoS2Zj5qDO1bVhKa5LlfsmUXCU0Ss3SVhIZpvpckdDXTplfQxlC1LSX5sj9sMxUJ6SocwTyKhMGV7KR2AUKkuYcPMqVqQqMNjXwEQjqrci+EZCRYY6rWsYyH+xKEmjnF5+KExA9ww1fz7P5HoPuk6ZrEEVwKdWi9/4iuW7AojmmZg8uz99P7fgG/b+oRgj5WTZgGI+zcnxnPUpDuRQxI5v7JbEaGJFyFUSywwXqE4AZ7NaHRJm3q1pCUyCITaY/lRn9a0nMXoDvMI0xz87/g1Wo0Jj2RPYI6REqpVjYLxf5WQshkrn9Bq9XSRQYXDVah5gQNNLLIJ3QMun7kpSvO2BsWnaP/u5Fl7UR6Lt8vRWgww9eTd349k2mlwWa3WUKtpYo+eBRLLqFhsTHz46BN16T1z9IwrNE2qhvUgEGbBqGwrvDpbNDvD7qXj+yyxLLZXl3pnWgjzqvF0iAUEAH9abYGdefYyhMyi0dA3RdNS7AKT+YLZbuKEjROaLQvFYAXFZqobZ/3/Gmg4c1qu+QOTdstoWH2/0j4XsqleUOFp5txq54mvWf45J8dEBpOu/sLArzIbHnRFn4Gtm9POhCjHuGNLiEKOoad7RlmuytanJcLKM7Rk72UbE+HTqjSI9Tzhy4edXpTzwsPl12dO5gdNQcDn/njE4lx/nnsFs58UiGssP+zDKKet9AhtA3hkMrWmj+zLRz29AeLxaBvtsu3z7xTaaZIaKmu1uQMMPEkELoOdKPeSHg0jmLzoJ7su5yyThweUS/rDabaWEIsm2xdKY42KwXITyb5s6tVb8y3nYmwcksr8s4ZPdkj+RhsslSdblZU7id76zeEozOWsf3MnnDKj4T05vJzRsCvyh9/gp24lBDzl7wOY8oCG36dMnLmRjMlDNYDIcxrBp3aEO20tD4SyuSitBwfTEPVXA69VBFyat1cvXXe+FOctzU1VGajyBqa7bsi37JtztUC/PapyiYyeNdO6OwRsu0t2/zFFXHlxGz26cDdhtq7FW02SN2FqK5VOW+iyTnbM/BH+rVXhCOKiYDAiLGKb5LDNdOth9Qj6W5kgyZIRcKe4BgQ40LgNAiAh5238XTiRYHRzfWGGzHQpYbZwIUWiXRUGknrLhoCS8gTZs4zCy7Y0O6o1RVduyOYdu8mHTHQABPOi8VPiB4cQX6ll6aROESO8AMymIgeNebJCFGs8F/2GjJ7rfOEkf45FDTieOib1W8SwdBtoLpL2/Ja6SdMkBqHGewyXjvbSEFYdC4z69M4aCALR7ypf3PjDyUiQKROtPfOQFMzDOG1rOG4NIyEnwCZ+7KVh3WGlqXo3tekxNrrhCFjmhIqDAn1YaCxooQ5x1j2cOFV2/GUp/6iKCifmBICC6bSWkyaCdgTKWFeW/Kx/soYllB3Chg2NZQQHnoQQmKuOzibEgNnaKfrTqez7vEmYvy74LFzMWGBNbRA2SkhsKovZcCkJ7Rm6zsD85dmCSdrE4dRketi+46ttnU5Qv0fAPPclFBRgfiTtyCt1ZINDERCbsAQPB2DaWQF94eswhuhAgcrAek2OraQNVKE34BiTe9SRoFw7Gb2A2RMUMvv6egmqpIi5gnoiIQQDFrD788lj326JI+LJ4TCzcxJutvQ32soeoqFlrJn132p86XIUXQc4j85QiDui/4MnwHSDXEjFdpmma0pJaH9oXQAyV5NllAaNQiZlgKAxaKEbL5NRYjzDhab2gIhnM+Lb8a1dpXlFqQbdicqshtBmntjEDFPCK1+TMQvEvX0kyIFN3R3RBA5IXc03JQETs7djK2MsKGmhD1V97K5kq50EYv4ilCZLi4lZFda+RtMvO4IufiOMW7XNkMIZoIoIW9slppJkSJ7ESLp1yF95F7o+4hBC9shwp9pfSwRJVQGfmKyZaJZiYVPHRCtqYwwtX3xJAJLGA55aTVOMSVcqc2HkPRUjPLZ51L4rCHxOUsIEc1LJ+2aJ2SfQIe+3wBM5qUSjeJUNa9Ny1d8M7cwSJIQ0udNnohImEYaHiVUWNLoqYnOx9toVGNhQDE2hQnTMSeZQcsQGoh0kDdycU7PAqxiD8lm7hMV3+j8TczWwIR0xEG7bZaQnm44SboKPDHCKEnSeOyAtrcERpxMQcqcg8mHEyAhNXtpqJ4lTNtpT7xYpuT631wo3Zp9IOnAptQZkXxBQEKaNkiXhgOEiCSokuaqdhYMoe2KNTOR/KDkkWbcOBgkpEsBUx6AUGxCuXVIspIucsWSwxPmReMZIu5Zg4TkQ+ZKiFA0AzmEtMm5RuZcRHjSvPTbBFi/BRMmlcMsUIEIxSmhnDU5NP4K74q3XKwCEupOOWXFViJMmPx1xihBhOLYNCdKIc8tvgxxK0hAwgrn7DM4MGFyHdNjQUIxZlROMdIwiZgv132j3REi1N+ylhVjE5SEzEQzmYXlCQWbqBgAMz42HYEEXmI7G4bvuYYsTaWzId+YWdD4fdP8vZPL2AjPha4T437wTSexbDIC5tsyil58DabSP79VkHSejC+5KtHPPgmN+6ZWI2+NIL15tWO95TOw7M0/8gqTua8siYYcUt35kU+sKqcmRlIOsUmXyckXQaZAfO1XcuWIVoiiIfOqCKi27GSKKMf8u1Au7gqa/nmmHVY3U1rDkd5vivqhcal6fR5cikxWn13t4GnWIMpb26cjRelpfAVuykwfRHKVYBI8dgoO2XjDTKSDOwShW9dxZLnSeZHCKicVSSPNZMMmq02yAH+07bH8W930Uz1vgFC003RWUVEkas7BPayTqT+dCDUBr4LKqporZCS3p2nMKM+90BVoQzLGz4tBznXnY1AdbTSUwjXR1Q9Sc5q+EGab9Frvt3K+3cu+fVD27Op77ZM8C5+G9WP4GpcusqG5Ng/jZ3kcMtbJHcZ/+6o2QMU6LmZoNobWQON09L1OCTnHwGnyoT1jWMt7EVJJI0/G17XEpewByFVadprzjgyvi1bZTgRvE5HIqasTJqWSGxvmD80QW0KXm/n+QBxh+PXW5wrpfxZZCV/ne3QiSS0JH3SOz1E4yAmEnTVbhiCEFwhjL//WGw+Hw/HsbYMLrfRv4P15EkuSfZ/NxO+tVqsZb+d8Zv6QDQ9QvOkuXGtcAC8ALHVwcI7g0YCR2RYBacjOAefmvDUA631hF5F8TeImp9PH3qY+Qo1nWk7SYAopX2HvnfNrMSoTunUMKGDJA2L8LI0vZqSL1UXoNvlqZzkiwhuoHierdE9bTYSNAkqXMkUAtru94ZzUdPbMrc2rhbBhQPnuhwQSO5/rm+HUv7nqBEM/PsSshdCua8AkF5Rf4ThCB2dDDq4OQgyOMWuWcrmPkr06Ya3DCbn8nDn15ghrfW2lStAL5HdAyCzOaV76o7j6CN3XeodLOYK2BDZLuBMbw8ovOBioSJhZH70DeYVbagVC+7WBt1TnS9yD2Bgh2pGTyAo6maIBQnupdUZZM+pl9kzUTqg8GWMH8rb6TbUUIb7bSw9kNX3VzsEXJ8Syo1t2q3EmT1oToY0qvbyxTvUMHcaChK7eYTO70szJL3YhQht9Kb5QN8s8m6NPiPCoiXxoZQ3vsNJ36BK6+Ln+hHZNmlw5iorUIkQYrffuH5QadmwZZD4hsvH5l60+Rn4HgavOcwhdbG93P4Aoq+nVK85QygnD7NWy6O7mvcvz1xv+UBaQMErNvV6Pdzp+r1Gtm+sPI5pQDPekM4TRFvWADT2/9XaYfWlIXsvvXXXunh1C+BuNNned9cxvHWrNHXXUUUcdddRRR+1S/wOb73zwjTE4ygAAAABJRU5ErkJggg=="
+                    width="160px" height="170px" style="border-radius: 17px;" alt="">
+                </div>
+                <div class="info">
+                    <h3>Mchine learnning developer(Python)</h3>
+                    <!-- <p>I received training at The hope International Academy in the field of machine learning and artificial intelligence and i spent in 6 months.
+                    </p> -->
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <img src="https://orangecodingacademy.com/assets/boosted/dist/img/ORANGE_LOGO_rgb-black.jpg"
+                    width="300px" height="170px" style="border-radius: 17px;" alt="">
+                </div>
+                <div class="info">
+                    <h3>Orange Bootcamp(Web-developer)</h3>
+                    <!-- <p>I got the opportunity to train at Orange's programming academy in the field of website and web application development.
+                    </p> -->
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--This is the prjects cards-->
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://img.freepik.com/premium-vector/delivery-person-riding-motorcycle_696497-289.jpg?w=2000"
+                    width="60px";
+                    height="220px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Sahlah  project</p>
+                    <strong class="project-title">
+                        <span>deleivery project</span>
+                        <a href="projects_page.html" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://us.123rf.com/450wm/montecristo007/montecristo0071910/montecristo007191000096/133415738-online-shop-online-store-logo-logotype-for-business-isolated-vector-illustration.jpg?ver=6"
+                     width="60px";
+                    height="220px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">E-commerce project</p>
+                    <strong class="project-title">
+                        <span>Electronic shop</span>
+                        <a href="project2.html" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO_NLeO8N2PasunH8JXRPpzjKSBusciEbs_g&usqp=CAU" 
+                    width="60px";
+                    height="220px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">AAbu project manager</p>
+                    <strong class="project-title">
+                        <span>mobile app project manager</span>
+                        <a href="project3.html" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <!--This is the skills cards-->
+    <section class="projects" id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://yt3.googleusercontent.com/ytc/AOPolaSniT6fNseJ5-j8Y5nGJoBdXG3qX7aWq-HXOrkQkw=s900-c-k-c0x00ffffff-no-rj"
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Figma</p>
+                   
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.orphicpixel.com/wp-content/uploads/2012/03/html5intro.jpg"
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">HTML5</p>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/css3-logo.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">CSS3</p>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Git Hub</p>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://uploads-ssl.webflow.com/5f841209f4e71b2d70034471/60bb4a2e143f632da3e56aea_Flutter%20app%20development%20(2).png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Flutter</p>
+                    
+                </div>
+            </div>
+
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.pngall.com/wp-content/uploads/2016/05/PHP-Logo-PNG-Clipart.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">PHP</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://logosdownload.com/logo/postman-logo-big.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Postman</p>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--LTUFkuK5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://imgur.com/Mj3H69v.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Boot Strap</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/de/thumb/d/dd/MySQL_logo.svg/2560px-MySQL_logo.svg.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Mysql</p>
+                   
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.wi6labs.com/wp-content/uploads/2019/12/Machine-learning-logo-1.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Machine Learnnig</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3195/3195640.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Algorethims</p>
+                    
+                </div>
+            </div>
+
+
+
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://1.bp.blogspot.com/-kWxCvjwnSpk/YDC0Tr7_pFI/AAAAAAAABIg/zZBwUe4zH3wrjqGn5EFbHvM_YVp4dfePgCLcBGAsYHQ/s350/DS%2BLogo.png" 
+                    width="50px";
+                    height="140px"
+                    />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Data Structures</p>
+                    
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+962 786399913</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>lwrnsalkhtyb9@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="info">
+                    <h3>Linked In</h3>
+                    <p>Lorans_Alkhateeb</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!--This is the footer of the website-->
+    <footer class="footer">
+        <!-- Facebook -->
+ <a href="https://www.facebook.com/lorans.alkhateeb" target="_blank"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></a>  
+
+<!-- Twitter -->
+ <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp fa-2x" style="color: #55acee;"></i></a> 
+
+<!-- Google -->
+<a href="lwrnsalkhtyb0@gmail.com" target="_blank"><i class="fab fa-google fa-2x" style="color: #dd4b39;"></i></a>   
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/loransalkhateeb/" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>   
+
+<!-- Linkedin -->
+<a href="https://www.linkedin.com/in/lorans-alkhateeb-2a7864278/" target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a>  
+
+<!-- Whatsapp -->
+        <div class="social-icons">
+            <p>© 2023  Lorans Alkhateeb</p>
+        </div>
+    </footer>
+
+</body>
+</html>
