@@ -15,23 +15,41 @@
     --tr2:scale(1.2);
     --bkblue:#3a6cf4;
 }
+.container{
+    font-size: 25px;
+}
 
-header {
+.navbar {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 60px ;
+    padding: 30px 60px ;
 }
 
-@media only screen and (min-width : 200px) {
-    .nav {
- float:left;
- }
+
+
+
+
+@media screen and (min-width:400px){
+    body{
+        width: 100%;
+    }    
+    .info1 p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer{
+        width: 100%;
+        padding: 0%;
+    }
 }
+
+
+
 .logo{
     text-decoration: none;
     color: #3a6cf4;
@@ -40,16 +58,23 @@ header {
     font-size: 1.8em;
 }
 
-.navigation a{
+
+.navbar a{
     color: #3a6cf4;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
 }
+.con_nav{
+   display: flex;
+   margin-right: 30px;
+}
 
-.navigation a:hover{
+.navbar a:hover{
     color: #601cfc;
+    font-size: 30px;
+    transition: var(--tr);
 }
 
 section {
@@ -393,6 +418,25 @@ font-size: 22px;
     padding: 0 12px 0 0;
 
 }
+
+@media only screen and (min-width:400px){
+.footer{
+    width: 100%;
+    font-size: 12px;
+}
+.main div{
+ padding-top: 90px;
+}
+.nav1 a{ 
+    overflow: hidden;
+}
+
+
+    
+}
+
+
+
 
 @media (max-width:1023px){
     header{
