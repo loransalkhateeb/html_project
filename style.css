@@ -46,7 +46,12 @@
         width: 100%;
         padding: 0%;
     }
+    .about-wrapper{
+        width: 100%;
+    }
 }
+
+
 
 
 
@@ -512,6 +517,9 @@ body{
 .about-left-content:hover{
     transition: 0.4s ease;
     box-shadow:  10px 0px 16px 10px lightblue;
+}
+.about-left-content{
+    margin-top: 50px;
 }
 
 header{
