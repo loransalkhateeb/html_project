@@ -406,7 +406,14 @@ font-size: 22px;
     color: #fff;
     padding: 2em;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer .icons {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-title {
@@ -511,7 +518,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .about-wrapper{
-    height: 100vh;
+    /* height: 100vh; */
    
 }
 .about-left-content:hover{
@@ -560,7 +567,9 @@ header{
     background: #12192c;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
-    border-radius: 12px 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    border-radius: 12px 12px 0 0;
 }
 
 .about-left-content{
@@ -584,8 +593,8 @@ header{
     transition: all 0.5s ease-in-out;
 }
 .shadow{
-    margin-left: auto;
-    margin-right: auto;
+   display: flex;
+   justify-content: center  ;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -639,7 +648,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5rem;
+    padding: 0 2rem;
     text-align: center;
     color:var(--bk-white)
 }
@@ -974,7 +983,6 @@ header{
         margin: 50px 0;
         line-height: 30px;
     }
-
     nav .con_nav .navbar-brand a {
         font-size: 20px;
     }
@@ -987,6 +995,38 @@ header{
 
     #check:checked~.con_nav {
         left: 0;
+    }
+    /* .about-left-content{
+        display: block;
+        border: 0px solid red;
+        padding: 5px;
+        margin-top: 5px;
+        width: 100%;
+        height: 100px;
+        overflow-y: scroll;
+    } */
+}
+
+@media (max-width:1000px) {
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 10px
+        ;
+    }
+    .icons{
+        display: flex;
+        gap: 10px;
+    }   
+    .timeline{
+        display: grid;
+        grid-row-start: 3;
+        grid-row-end: 7;
     }
 }
 
