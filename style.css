@@ -1015,7 +1015,7 @@ header{
         padding-top: 10px;
     }
     .footer{
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
     .icons{
@@ -1108,3 +1108,7 @@ header{
   box-shadow: 5px 5px 5px 5px rgb(174, 174, 174);
   
   } */
+
+
+
+  
